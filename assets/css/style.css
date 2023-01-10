@@ -1,0 +1,506 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: "Fira Code", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.active {
+  border-bottom: none;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 3rem 0 0;
+  z-index: 2;
+}
+
+#navbar img {
+  width: 200px;
+  height: 70px;
+}
+
+.fa-bars {
+  color: blueviolet;
+  font-size: 2rem;
+}
+
+#navbar ul,
+li,
+a {
+  display: block;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff !important;
+  transition: all 0.5s ease-in-out;
+}
+
+#show a {
+  position: relative;
+}
+
+#show a::before {
+  position: absolute;
+  content: "";
+  background-color: blue !important;
+  width: 0%;
+  height: 1px;
+  transition: 0.5s;
+}
+
+#show a::before {
+  right: 0;
+  top: -10;
+}
+
+.navbar ul {
+  display: none;
+}
+
+.git-link a {
+  color: blue !important;
+  text-decoration: underline black;
+  display: inline;
+}
+
+.play-btn {
+  animation: pulse_01 2s ease infinite;
+  animation-direction: alternate;
+  padding: 0.4rem 2rem;
+  border-radius: 20px;
+}
+
+@keyframes pulse_01 {
+  0% {
+    background-color: aqua;
+  }
+  70% {
+    background-color: #ced1ef;
+  }
+  100% {
+    background-color: lightblue;
+  }
+}
+
+.arrow {
+  animation: MoveUpDown 1s infinite alternate;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#arrow {
+  color: #000;
+  border-radius: 360px;
+  padding: 0.5rem;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  25% {
+    bottom: 50px;
+  }
+  50% {
+    bottom: 50px;
+  }
+  75% {
+    bottom: 75px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  padding-top: 5rem;
+  align-items: center;
+  width: 100%;
+  padding: 0 3rem;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.home {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.show {
+  display: block;
+  z-index: -2 !important;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin-top: 5vh;
+  position: absolute;
+  right: 0;
+}
+
+.show li {
+  padding: 1rem;
+  display: block !important;
+  list-style: none;
+}
+
+.hide li {
+  display: none;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 8rem 1vh 1rem;
+  z-index: 1;
+  background: linear-gradient(
+    #ffffff,
+    #ffffff,
+    #fbfcf9,
+    #ced1ef,
+    #ffffff,
+    #fbfcf9,
+    #ced1ef,
+    #ffffff
+  );
+}
+
+.abt_img {
+  background: url("../img/profilepic.jpg") no-repeat center;
+  object-fit: cover;
+  height: 50vh;
+  width: 75vw;
+  color: #fff;
+  display: none;
+  position: relative;
+  left: 30px;
+  transform: rotate(20deg);
+  overflow: hidden;
+  box-shadow: 0 0 90px 0 rgba(255, 255, 255, 0.2);
+  margin-bottom: 5vh;
+  transition: all 0.4s ease;
+}
+
+.project {
+  display: flex;
+  margin: 2rem 1rem;
+  position: relative;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: column;
+}
+
+.project .description > p {
+  margin: 2rem 0;
+}
+
+.built-with a::before {
+  position: absolute;
+  content: "";
+  background-color: blue;
+  width: 0%;
+  height: 1px;
+  transition: 0.5s;
+}
+
+.built-with a:hover::before {
+  width: 100%;
+}
+
+.built-with a {
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  color: blue !important;
+  margin: 0.5rem 0.5rem 0 0;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+
+.built-with a:visited {
+  transition: all 0.5s ease-in-out;
+}
+
+.project small:nth-child(odd) {
+  margin: 0.5rem 0.5rem 0 0;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #dcf2b0;
+  transition: all 0.5s ease;
+}
+
+.project small:nth-child(even) {
+  background: #ced1ef;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.5rem 0 0;
+  transition: all 0.5s ease;
+}
+
+small:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.title {
+  margin: 0 0 4vh 0;
+  width: fit-content;
+}
+.title::before {
+  content: "------ ";
+}
+
+.overlay {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+.project_pics:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.overlay a {
+  background: #ccc;
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-transform: lowercase;
+}
+
+.project_pics {
+  width: 100%;
+  box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.5);
+}
+
+.profesco {
+  background: url("../img/profesco.png") no-repeat;
+  background-size: cover;
+}
+.head {
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 0.5rem !important;
+}
+
+.newsweek {
+  background: url("../img/newsweek.png") no-repeat;
+  background-size: cover;
+}
+
+.mrsoft1 {
+  background: url("../img/mrsoftfull.png") no-repeat;
+  background-size: cover;
+}
+
+.dashboard1 {
+  background: url("../img/tododashboard.png") no-repeat;
+  background-size: cover;
+  min-height: 35vh;
+}
+
+.nonso {
+  background: url("../img/nonso.png") no-repeat;
+  background-size: cover;
+}
+
+.UchennaTUT {
+  background: url("../img/capstone.png") no-repeat;
+  background-size: cover;
+}
+
+.niiflicks {
+  background: url("../img/niiflicks.png") no-repeat;
+  background-size: cover;
+}
+
+.mrsoft2 {
+  background: url("../img/mrsoft2.png") no-repeat;
+  background-size: cover;
+}
+
+.documentation {
+  background: url("../img/documentation.png") no-repeat;
+  background-size: 100%;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.contacts {
+  background: url("../img/contacts.png") no-repeat;
+  background-size: cover;
+}
+
+.rest {
+  background: url("../img/rest.png") no-repeat;
+  background-size: cover;
+}
+
+.mobilepics img {
+  width: 20%;
+  position: relative;
+  transition: all 0.6s ease;
+}
+
+footer li,
+footer a {
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+footer {
+  display: flex;
+  color: #000 !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.portfolio_footer a {
+  color: #000 !important;
+}
+
+.portfolio_footer {
+  background: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .active {
+    border-bottom: 1px solid #dcf2b0;
+    padding-bottom: 0.1rem;
+  }
+  .show {
+    display: inline-block;
+    z-index: 1;
+    background: none;
+    padding: 0;
+    position: static;
+  }
+
+  .show li {
+    margin: 1rem;
+    display: inline-block !important;
+    border-bottom: none;
+  }
+
+  #show a:hover::before {
+    width: 100%;
+  }
+
+  .hide li {
+    display: inline-block !important;
+  }
+
+  li:hover {
+    transform: scale(1.1);
+  }
+  .project_pics {
+    padding: 2rem 1rem 1rem 1rem;
+  }
+
+  .fa-bars {
+    display: none !important;
+  }
+
+  .abt_description {
+    display: inline-block;
+    width: 50%;
+    padding: 2rem;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    overflow: auto;
+  }
+
+  .abt_img {
+    height: 50vh;
+    width: 23vw;
+    display: inline;
+    transition: all 0.5s ease;
+  }
+
+  .abt_img:hover {
+    transform: rotate(0deg);
+    transform: scale(1.1);
+  }
+
+  .project {
+    margin: 8rem 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project .description {
+    width: 100%;
+  }
+
+  .project .description > p {
+    padding-right: 1rem;
+    margin: 0.5rem 0;
+  }
+
+  .portfolio {
+    display: flex;
+    padding: 8rem 15rem 0;
+  }
+
+  .left {
+    margin-right: 2rem;
+  }
+
+  .text {
+    line-height: 90px;
+  }
+  hr {
+    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
+    border: 0.1px dotted rebeccapurple;
+    margin: 0 15rem;
+  }
+
+  footer {
+    justify-content: space-between;
+    border-top: 1px solid;
+  }
+
+  footer li {
+    display: inline-block;
+    margin: 0 9rem;
+  }
+}
