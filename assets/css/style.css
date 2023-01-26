@@ -51,15 +51,12 @@ a {
 #show a::before {
   position: absolute;
   content: "";
-  background-color: blue !important;
+  background-color: white !important;
   width: 0%;
   height: 1px;
   transition: 0.5s;
-}
-
-#show a::after {
-  right: 0;
-  top: -10;
+  transition-delay: 50ms;
+  bottom: -5px;
 }
 
 .navbar ul {
@@ -83,9 +80,11 @@ a {
   0% {
     background-color: aqua;
   }
+
   70% {
     background-color: #ced1ef;
   }
+
   100% {
     background-color: lightblue;
   }
@@ -108,16 +107,20 @@ a {
 }
 
 @keyframes MoveUpDown {
+
   0%,
   25% {
     bottom: 50px;
   }
+
   50% {
     bottom: 50px;
   }
+
   75% {
     bottom: 75px;
   }
+
   100% {
     bottom: 70px;
   }
@@ -179,16 +182,14 @@ a {
   flex-wrap: wrap;
   padding: 8rem 1vh 1rem;
   z-index: 1;
-  background: linear-gradient(
-    #ffffff,
-    #ffffff,
-    #fbfcf9,
-    #ced1ef,
-    #ffffff,
-    #fbfcf9,
-    #ced1ef,
-    #ffffff
-  );
+  background: linear-gradient(#ffffff,
+      #ffffff,
+      #fbfcf9,
+      #ced1ef,
+      #ffffff,
+      #fbfcf9,
+      #ced1ef,
+      #ffffff);
 }
 
 .abt_img {
@@ -220,7 +221,7 @@ a {
   flex-direction: column;
 }
 
-.project .description > p {
+.project .description>p {
   margin: 2rem 0;
 }
 
@@ -268,13 +269,15 @@ a {
 }
 
 small:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   cursor: pointer;
 }
+
 .title {
   margin: 0 0 4vh 0;
   width: fit-content;
 }
+
 .title::before {
   content: "------ ";
 }
@@ -293,15 +296,21 @@ small:hover {
   height: 100%;
   transition: 0.5s ease;
 }
+
 .project_pics:hover .overlay {
   width: 100%;
   left: 0;
+}
+
+.project_pics:hover a {
+  display: inline;
 }
 
 .overlay a {
   background: #ccc;
   padding: 0.5rem 1rem;
   color: #000;
+  display: none;
   text-transform: lowercase;
 }
 
@@ -314,6 +323,7 @@ small:hover {
   background: url("../img/profesco.png") no-repeat;
   background-size: cover;
 }
+
 .head {
   background: rgba(0, 0, 0, 0.8);
   padding-top: 0.5rem !important;
@@ -410,6 +420,7 @@ footer {
   margin-bottom: -3px;
   color: #fff !important;
 }
+
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -424,6 +435,7 @@ footer {
     border-bottom: 1px solid #dcf2b0;
     padding-bottom: 0.1rem;
   }
+
   .show {
     display: inline-block;
     z-index: 1;
@@ -446,9 +458,6 @@ footer {
     display: inline-block !important;
   }
 
-  li:hover {
-    transform: scale(1.1);
-  }
   .project_pics {
     padding: 2rem 1rem 1rem 1rem;
   }
@@ -475,7 +484,8 @@ footer {
 
   .abt_img:hover {
     transform: rotate(0deg);
-    transform: scale(1.1);
+    transform: scale(1.05);
+    cursor: pointer;
   }
 
   .project {
@@ -484,14 +494,19 @@ footer {
     align-items: center;
   }
 
+  .first-project {
+    margin-top: 4rem;
+  }
+
   .project .description {
     width: 100%;
   }
 
-  .project .description > p {
+  .project .description>p {
     padding-right: 1rem;
     margin: 0.5rem 0;
   }
+
 
   .portfolio {
     display: flex;
@@ -505,6 +520,7 @@ footer {
   .text {
     line-height: 90px;
   }
+
   hr {
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
     border: 0.1px dotted rebeccapurple;
