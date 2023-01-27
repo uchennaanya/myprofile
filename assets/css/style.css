@@ -10,16 +10,13 @@ html {
   scroll-behavior: smooth;
 }
 
-.active {
-  border-bottom: none;
-}
-
 #navbar {
   display: flex;
   justify-content: space-between;
   position: fixed;
   align-items: center;
   width: 100%;
+  background-color: transparent;
   padding: 1rem 3rem 0 0;
   z-index: 2;
 }
@@ -40,7 +37,7 @@ a {
   display: block;
   margin-left: 1rem;
   text-decoration: none;
-  color: #fff !important;
+  color: #ffffff !important;
   transition: all 0.5s ease-in-out;
 }
 
@@ -314,6 +311,11 @@ small:hover {
   text-transform: lowercase;
 }
 
+.head {
+  background: rgba(0, 0, 0, 0.8);
+  padding-top: 0.5rem !important;
+}
+
 .project_pics {
   width: 100%;
   box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.5);
@@ -322,11 +324,6 @@ small:hover {
 .profesco {
   background: url("../img/profesco.png") no-repeat;
   background-size: cover;
-}
-
-.head {
-  background: rgba(0, 0, 0, 0.8);
-  padding-top: 0.5rem !important;
 }
 
 .newsweek {
@@ -419,15 +416,6 @@ footer {
   height: 20px !important;
   margin-bottom: -3px;
   color: #fff !important;
-}
-
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
 }
 
 @media only screen and (min-width: 768px) {
