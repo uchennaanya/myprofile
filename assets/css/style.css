@@ -75,15 +75,15 @@ a {
 
 @keyframes pulse_01 {
   0% {
-    background-color: aqua;
+    background-color: rgb(98, 27, 220);
   }
 
   70% {
-    background-color: #ced1ef;
+    background-color: #000;
   }
 
   100% {
-    background-color: lightblue;
+    background-color: rgb(20, 55, 66);
   }
 }
 
@@ -403,12 +403,12 @@ footer {
   width: 100%;
 }
 
-.portfolio_footer a {
-  color: #000 !important;
+.portfolio_footer {
+  background: #ffff;
 }
 
-.portfolio_footer {
-  background: #fff;
+.portfolio_footer li:nth-child(odd) a {
+  color: #000 !important;
 }
 
 .home-icon {
@@ -515,7 +515,7 @@ footer {
     margin: 0 15rem;
   }
 
-  footer {
+   footer {
     justify-content: space-between;
     border-top: 1px solid;
   }
@@ -523,5 +523,5 @@ footer {
   footer li {
     display: inline-block;
     margin: 0 9rem;
-  }
+  } 
 }
