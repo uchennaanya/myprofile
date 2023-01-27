@@ -16,7 +16,7 @@ html {
   position: fixed;
   align-items: center;
   width: 100%;
-  background-color: transparent;
+  background-color: black;
   padding: 1rem 3rem 0 0;
   z-index: 2;
 }
