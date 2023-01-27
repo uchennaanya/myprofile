@@ -304,9 +304,9 @@ small:hover {
 }
 
 .overlay a {
-  background: #ccc;
+  background: #ffffff;
   padding: 0.5rem 1rem;
-  color: #000;
+  color: #000 !important;
   display: none;
   text-transform: lowercase;
 }
