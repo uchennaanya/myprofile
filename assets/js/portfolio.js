@@ -4,11 +4,10 @@ window.onscroll = function () {
 
   function scrollFunction() {
     if (document.documentElement.scrollTop > 500) {
-      document.getElementById("navbar").style.padding = "0 4rem 0 0";
-      document.getElementById("logo").style.width = "150px";
-      document.getElementById("logo").style.height = "60px";
+      document.getElementById("navbar").style.padding = "1rem";
+     
       document.getElementById("navbar").style.backgroundColor =
-        "rgba(0, 0, 0, 0.8)";
+        "rgba(0, 0, 0, 1)";
       document.getElementById("arrow").style.display = "none"
       document.querySelectorAll("a")[0].style.color =
       document.querySelectorAll("a")[1].style.color =
@@ -16,17 +15,10 @@ window.onscroll = function () {
       "#fff";
 
     } else {
-      document.getElementById("navbar").style.padding = ".5rem 4rem 0 0";
-      document.getElementById("logo").style.width = "200px";
-      document.getElementById("logo").style.height = "60px";
+      document.getElementById("navbar").style.padding = "1rem";
+      
       document.getElementById("navbar").style.color =
-        "black !important";
-      document.querySelectorAll("a")[0].style.color =
-      "#000";
-      document.querySelectorAll("a")[1].style.color =
-      "#000";
-      document.querySelectorAll("a")[2].style.color =
-      "#000";
+        "#000";
       document.getElementById("arrow").style.display = "block"
     }
   }
@@ -44,5 +36,3 @@ window.onscroll = function () {
         show.classList.remove("hide")
     }
   })
-
-

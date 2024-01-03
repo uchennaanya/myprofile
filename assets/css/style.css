@@ -17,25 +17,23 @@ html {
   align-items: center;
   width: 100%;
   background-color: black;
-  padding: 1rem 3rem 0 0;
+  padding: 1rem;
   z-index: 2;
 }
 
-#navbar img {
-  width: 200px;
-  height: 70px;
-}
-
 .fa-bars {
-  color: blueviolet;
+  color: #f1f1f1;
   font-size: 2rem;
 }
 
+.logo {
+  padding: 0;
+}
 #navbar ul,
 li,
 a {
+  padding: 0 0 0 0.5rem;
   display: block;
-  margin-left: 1rem;
   text-decoration: none;
   color: #ffffff !important;
   transition: all 0.5s ease-in-out;
@@ -104,7 +102,6 @@ a {
 }
 
 @keyframes MoveUpDown {
-
   0%,
   25% {
     bottom: 50px;
@@ -123,47 +120,19 @@ a {
   }
 }
 
-.wrapper {
-  display: flex;
-  height: 100vh;
-  padding-top: 5rem;
-  align-items: center;
-  width: 100%;
-  padding: 0 3rem;
-  justify-content: space-between;
-}
-
-.text {
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 60px;
-  color: rgb(255, 255, 255);
-  text-align: left;
-}
-
-.home {
-  color: rgb(255, 255, 255);
-  background: rgba(0, 0, 0, 1);
-  display: flex;
-  height: 100vh;
-  height: 100dvh;
-  flex-direction: column;
-  align-items: center;
-  overflow: hidden;
-}
-
 .show {
   display: block;
   z-index: -2 !important;
   background: rgba(0, 0, 0, 0.7);
   width: 100%;
-  margin-top: 5vh;
+  padding-top: 5vh !important;
   position: absolute;
   right: 0;
 }
 
 .show li {
   padding: 1rem;
+
   display: block !important;
   list-style: none;
 }
@@ -179,31 +148,43 @@ a {
   flex-wrap: wrap;
   padding: 8rem 1vh 1rem;
   z-index: 1;
-  background: linear-gradient(#ffffff,
-      #ffffff,
-      #fbfcf9,
-      #ced1ef,
-      #ffffff,
-      #fbfcf9,
-      #ced1ef,
-      #ffffff);
+  background: linear-gradient(
+    #ffffff,
+    #ffffff,
+    #fbfcf9,
+    #ced1ef,
+    #ffffff,
+    #fbfcf9,
+    #ced1ef,
+    #ffffff
+  );
 }
 
-.abt_img {
-  background: url("../img/profilepic.jpg") no-repeat center;
-  object-fit: cover;
-  height: 50vh;
-  width: 75vw;
-  color: #fff;
-  display: none;
-  position: relative;
-  left: 30px;
-  /* transform: rotate(20deg); */
+.text {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.home {
+  color: rgb(255, 255, 255);
+  background: rgba(0, 0, 0, 1);
+  display: flex;
+  height: 100vh;
+  height: 100dvh;
+  flex-direction: column;
+  align-items: center;
   overflow: hidden;
-  box-shadow: 0 0 90px 0 rgba(255, 255, 255, 0.2);
-  margin-bottom: 5vh;
-  transition: all 0.4s ease;
-  border-radius: 150% 50%/100% 100% 50% 100%;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .project {
@@ -218,7 +199,7 @@ a {
   flex-direction: column;
 }
 
-.project .description>p {
+.project .description > p {
   margin: 2rem 0;
 }
 
@@ -326,6 +307,18 @@ small:hover {
   background-size: cover;
 }
 
+.techwings {
+  background: url("../img/techwingsfullscrn.png") no-repeat center;
+  background-size: contain;
+  height: 29vh;
+}
+
+.gpart {
+  background: url("../img/gpartworlfuscrn.png") no-repeat center;
+  background-size: contain;
+  height: 29vh;
+}
+
 .newsweek {
   background: url("../img/newsweek.png") no-repeat;
   background-size: cover;
@@ -349,6 +342,16 @@ small:hover {
 
 .UchennaTUT {
   background: url("../img/capstone.png") no-repeat;
+  background-size: cover;
+}
+
+.evergreen {
+  background: url("../img/evergreensidefulscrn.png") no-repeat;
+  background-size: cover;
+}
+
+.portfolioinreactjs {
+  background: url("../img/reactjsPorfoliofulscrn.png") no-repeat;
   background-size: cover;
 }
 
@@ -433,7 +436,7 @@ footer {
   }
 
   .show li {
-    margin: 1rem;
+    /* margin: 1rem; */
     display: inline-block !important;
     border-bottom: none;
   }
@@ -454,26 +457,24 @@ footer {
     display: none !important;
   }
 
-  .abt_description {
-    display: inline-block;
-    width: 50%;
-    padding: 2rem;
-    border-right: 1px solid;
-    border-bottom: 1px solid;
-    overflow: auto;
-  }
-
   .abt_img {
-    height: 50vh;
-    width: 23vw;
-    display: inline;
-    transition: all 0.5s ease;
-  }
+    height: 50%;
+    width: 50vw;
+    background: radial-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1)
+      ),
+      url("../img/profilepic.jpg") no-repeat center;
 
-  .abt_img:hover {
-    transform: rotate(0deg);
-    transform: scale(1.05);
-    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: end;
   }
 
   .project {
@@ -490,32 +491,26 @@ footer {
     width: 100%;
   }
 
-  .project .description>p {
+  .project .description > p {
     padding-right: 1rem;
     margin: 0.5rem 0;
   }
 
-
   .portfolio {
     display: flex;
-    padding: 8rem 15rem 0;
+    padding: 5rem 15rem 0;
   }
 
   .left {
     margin-right: 2rem;
   }
 
-  .text {
-    line-height: 90px;
-  }
-
   hr {
     box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
     border: 0.1px dotted rebeccapurple;
-    margin: 0 15rem;
   }
 
-   footer {
+  footer {
     justify-content: space-between;
     border-top: 1px solid;
   }
@@ -523,5 +518,5 @@ footer {
   footer li {
     display: inline-block;
     margin: 0 9rem;
-  } 
+  }
 }
