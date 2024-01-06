@@ -309,14 +309,12 @@ small:hover {
 
 .techwings {
   background: url("../img/techwingsfullscrn.png") no-repeat center;
-  background-size: contain;
-  height: 29vh;
+  background-size: cover;
 }
 
 .gpart {
   background: url("../img/gpartworlfuscrn.png") no-repeat center;
-  background-size: contain;
-  height: 29vh;
+  background-size: cover;
 }
 
 .newsweek {
