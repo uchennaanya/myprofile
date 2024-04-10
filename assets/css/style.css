@@ -427,7 +427,63 @@ footer {
   color: #fff !important;
 }
 
+.abt_img {
+  height: 80vh;
+  background: radial-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    ),
+    url("../img/profilepic.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  filter: grayscale(100%);
+}
+
 @media only screen and (min-width: 768px) {
+  .abt_img {
+    height: 50%;
+    width: 50vw;
+    background: radial-gradient(
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 1)
+      ),
+      url("../img/profilepic.jpg") no-repeat center;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    filter: grayscale(100%);
+  }
+
+  .text {
+    font: 400 3rem/60px "Fira Code", monospace;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: radial-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 1),
+      rgba(0, 0, 0, 1)
+    );
+  }
   .active {
     border-bottom: 1px solid #dcf2b0;
     padding-bottom: 0.1rem;
@@ -461,26 +517,6 @@ footer {
 
   .fa-bars {
     display: none !important;
-  }
-
-  .abt_img {
-    height: 50%;
-    width: 50vw;
-    background: radial-gradient(
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1),
-        rgba(0, 0, 0, 1)
-      ),
-      url("../img/profilepic.jpg") no-repeat center;
-
-    display: flex;
-    justify-content: center;
-    align-items: end;
   }
 
   .project {
