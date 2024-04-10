@@ -16,7 +16,7 @@ html {
   position: fixed;
   align-items: center;
   width: 100%;
-  background-color: black;
+  /* background-color: black; */
   padding: 1rem;
   z-index: 2;
 }
@@ -161,22 +161,6 @@ a {
   );
 }
 
-.text {
-  font: 400 3rem/60px "Fira Code", monospace;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  background: radial-gradient(
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 1),
-    rgba(0, 0, 0, 1)
-  );
-}
-
 .home {
   color: rgb(255, 255, 255);
   background: rgba(0, 0, 0, 1);
@@ -301,7 +285,7 @@ small:hover {
 }
 
 .head {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 1);
   padding-top: 0.5rem !important;
 }
 
@@ -427,14 +411,6 @@ footer {
   color: #fff !important;
 }
 
-.text {
-  font: 400 3rem/60px "Fira Code", monospace;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7);
-  margin-bottom: -20px;
-}
-
 .abt_img {
   height: 70vh;
   background: radial-gradient(
@@ -442,7 +418,7 @@ footer {
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 1)
@@ -452,14 +428,21 @@ footer {
   display: flex;
   justify-content: center;
   align-items: end;
-  filter: grayscale(100%);
+  filter: grayscale(40%);
+}
+.text {
+  font: 400 3rem/60px "Fira Code", monospace;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-shadow: #000 1px 0 10px;
+  text-shadow: 1px 1px 2px black;
+  margin-bottom: -20px;
 }
 
 @media only screen and (min-width: 768px) {
   .abt_img {
     height: 60%;
-    /* width: 50vw; */
-    margin-top: -150px;
+    margin-top: -120px;
     background: radial-gradient(
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0),
@@ -479,8 +462,8 @@ footer {
   }
 
   .text {
-    font: 400 3rem/60px "Fira Code", monospace;
-    color: rgb(255, 255, 255);
+    font: 400 3rem/60px "Fira Code" monospace;
+    /* color: rgb(255, 255, 255);
     text-align: center;
     background: radial-gradient(
       rgba(0, 0, 0, 0.4),
@@ -491,7 +474,7 @@ footer {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 1),
       rgba(0, 0, 0, 1)
-    );
+    ); */
   }
   .active {
     border-bottom: 1px solid #dcf2b0;
