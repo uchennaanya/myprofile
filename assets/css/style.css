@@ -457,8 +457,9 @@ footer {
 
 @media only screen and (min-width: 768px) {
   .abt_img {
-    height: 50%;
-    width: 50vw;
+    height: 60%;
+    /* width: 50vw; */
+    margin-top: -150px;
     background: radial-gradient(
         rgba(0, 0, 0, 0),
         rgba(0, 0, 0, 0),
