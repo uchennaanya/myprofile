@@ -92,7 +92,6 @@ a {
   background-size: 300%;
   transition: background-position 1s;
   animation: bg-animation 4s infinite;
-  text-decoration: underline !important;
 }
 
 .arrow {
@@ -397,7 +396,6 @@ footer a {
 
 footer {
   color: #000 !important;
-  border-top: 1px solid #ccc;
   position: sticky;
   bottom: 0;
   width: 100%;
@@ -412,6 +410,7 @@ footer ul {
 
 .portfolio_footer {
   background: #ffff;
+  border-top: 1px solid #ccc;
 }
 
 .portfolio_footer li:nth-child(odd) a {
