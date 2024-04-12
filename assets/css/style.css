@@ -66,21 +66,19 @@ a {
 }
 
 :root {
-  --gradient: linear-gradient(90deg, #52ee5c, purple, #ee6352);
+  --gradient: linear-gradient(90deg, #52ee5c, red, cyan, #7652ee);
 }
 
 @keyframes bg-animation {
   0% {
     background-position: left;
-    transform: scale(1);
   }
   50% {
     background-position: right;
-    transform: scale(1.25);
+    transform: scale(1.111);
   }
   100% {
     background-position: left;
-    transform: scale(1);
   }
 }
 
@@ -93,7 +91,8 @@ a {
   background-color: transparent;
   background-size: 300%;
   transition: background-position 1s;
-  animation: bg-animation 3s infinite;
+  animation: bg-animation 4s infinite;
+  text-decoration: underline !important;
 }
 
 .arrow {
@@ -391,18 +390,23 @@ footer li,
 footer a {
   text-align: center;
   display: inline-block;
+  text-decoration: underline;
   margin: 0;
   padding: 0.5rem 0;
 }
 
 footer {
-  display: flex;
   color: #000 !important;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border-top: 1px solid #ccc;
   position: sticky;
   bottom: 0;
+  width: 100%;
+}
+
+footer ul {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -440,6 +444,7 @@ footer {
   align-items: end;
   filter: grayscale(40%);
 }
+
 .text {
   font: 400 3rem/60px "Fira Code", monospace;
   color: rgb(255, 255, 255);
@@ -447,6 +452,11 @@ footer {
   text-shadow: 1px 1px 2px black;
   border-bottom: 9px solid #000;
   margin-bottom: -2px;
+}
+
+hr {
+  box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
+  border: 0.1px dotted rebeccapurple;
 }
 
 @media only screen and (min-width: 768px) {
@@ -475,6 +485,7 @@ footer {
   .text {
     font: 400 3rem/60px "Fira Code" monospace;
   }
+
   .active {
     border-bottom: 1px solid #dcf2b0;
     padding-bottom: 0.1rem;
@@ -489,7 +500,6 @@ footer {
   }
 
   .show li {
-    /* margin: 1rem; */
     display: inline-block !important;
     border-bottom: none;
   }
@@ -538,22 +548,8 @@ footer {
     margin-right: 2rem;
   }
 
-  hr {
-    box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
-    border: 0.1px dotted rebeccapurple;
-  }
-
-  footer {
-    justify-content: space-between;
-    border-top: 1px solid;
-  }
-  footer + div {
-    padding: 0.5rem;
-    background: #f1f1f1;
-  }
-
-  footer li {
-    display: inline-block;
-    margin: 0 9rem;
+  footer ~ div {
+    padding: 0.1rem 1rem;
+    background-color: #f1f1f1;
   }
 }
