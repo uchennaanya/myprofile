@@ -65,25 +65,35 @@ a {
   display: inline;
 }
 
-.play-btn {
-  animation: pulse_01 2s ease infinite;
-  animation-direction: alternate;
-  padding: 0.4rem 2rem;
-  border-radius: 20px;
+:root {
+  --gradient: linear-gradient(90deg, #52ee5c, purple, #ee6352);
 }
 
-@keyframes pulse_01 {
+@keyframes bg-animation {
   0% {
-    background-color: rgb(31, 28, 35);
+    background-position: left;
+    transform: scale(1);
   }
-
-  70% {
-    background-color: #000;
+  50% {
+    background-position: right;
+    transform: scale(1.25);
   }
-
   100% {
-    background-color: rgb(20, 55, 66);
+    background-position: left;
+    transform: scale(1);
   }
+}
+
+.play-btn {
+  background-image: var(--gradient);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: transparent;
+  background-size: 300%;
+  transition: background-position 1s;
+  animation: bg-animation 3s infinite;
 }
 
 .arrow {
@@ -391,7 +401,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
+  position: sticky;
   bottom: 0;
   width: 100%;
 }
@@ -501,7 +511,7 @@ footer {
   }
 
   .project {
-    margin: 8rem 1rem;
+    margin: 4rem 1rem;
     flex-direction: row;
     align-items: center;
   }
@@ -536,6 +546,10 @@ footer {
   footer {
     justify-content: space-between;
     border-top: 1px solid;
+  }
+  footer + div {
+    padding: 0.5rem;
+    background: #f1f1f1;
   }
 
   footer li {
