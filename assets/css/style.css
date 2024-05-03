@@ -64,6 +64,12 @@ a {
   display: inline;
 }
 
+.link {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 :root {
   --gradient: linear-gradient(90deg, #52ee5c, red, cyan, #7652ee);
 }
@@ -306,6 +312,11 @@ small:hover {
   background-size: cover;
 }
 
+.bossServices {
+  background: url("../img/bossservicesbig.png") no-repeat center;
+  background-size: cover;
+}
+
 .techwings {
   background: url("../img/techwingsfullscrn.png") no-repeat center;
   background-size: cover;
@@ -344,6 +355,11 @@ small:hover {
 
 .evergreen {
   background: url("../img/evergreensidefulscrn.png") no-repeat;
+  background-size: cover;
+}
+
+.ecleaning {
+  background: url("../img/ecleanbig.png") no-repeat center;
   background-size: cover;
 }
 
