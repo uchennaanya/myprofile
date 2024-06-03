@@ -194,10 +194,16 @@ a {
 
 .project {
   display: flex;
-  margin: 2rem 1rem;
+  margin: 2rem auto;
   position: relative;
   flex-direction: column-reverse;
   align-items: center;
+  width: fit-content;
+}
+
+.project > div {
+  width: 100%;
+  max-width: 500px;
 }
 
 .reverse {
@@ -310,88 +316,98 @@ small:hover {
 .profesco {
   background: url("../img/profesco.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .bossServices {
   background: url("../img/bossservicesbig.png") no-repeat center;
   background-size: cover;
+  height: 45vh;
 }
 
 .techwings {
-  background: url("../img/techwingsfullscrn.png") no-repeat center;
+  background: url("../img/techwingslarge.png") no-repeat center;
   background-size: cover;
+  height: 45vh;
 }
 
 .gpart {
   background: url("../img/gpartworlfuscrn.png") no-repeat center;
   background-size: cover;
+  height: 45vh;
 }
 
 .newsweek {
   background: url("../img/newsweek.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .mrsoft1 {
   background: url("../img/mrsoftfull.png") no-repeat;
   background-size: cover;
-}
-
-.dashboard1 {
-  background: url("../img/tododashboard.png") no-repeat;
-  background-size: cover;
-  min-height: 35vh;
+  height: 45vh;
 }
 
 .nonso {
   background: url("../img/nonso.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .UchennaTUT {
   background: url("../img/capstone.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .evergreen {
   background: url("../img/evergreensidefulscrn.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .ecleaning {
   background: url("../img/ecleanbig.png") no-repeat center;
   background-size: cover;
+  height: 45vh;
 }
 
 .portfolioinreactjs {
   background: url("../img/reactjsPorfoliofulscrn.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .niiflicks {
   background: url("../img/niiflicks.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .mrsoft2 {
   background: url("../img/mrsoft2.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .documentation {
   background: url("../img/documentation.png") no-repeat;
-  background-size: 100%;
+  background-size: cover;
+  height: 45vh;
   padding: 2rem 1rem 1rem 1rem;
 }
 
 .contacts {
   background: url("../img/contacts.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .rest {
   background: url("../img/rest.png") no-repeat;
   background-size: cover;
+  height: 45vh;
 }
 
 .mobilepics img {
@@ -470,6 +486,7 @@ footer ul {
 
 hr {
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
+  margin: 2rem;
   border: 0.1px dotted rebeccapurple;
 }
 
@@ -535,7 +552,7 @@ hr {
   }
 
   .project {
-    margin: 4rem 1rem;
+    /* margin: 4rem 1rem; */
     flex-direction: row;
     align-items: center;
   }
@@ -551,11 +568,6 @@ hr {
   .project .description > p {
     padding-right: 1rem;
     margin: 0.5rem 0;
-  }
-
-  .portfolio {
-    display: flex;
-    padding: 5rem 15rem 0;
   }
 
   .left {
