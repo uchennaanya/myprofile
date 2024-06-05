@@ -155,25 +155,6 @@ a {
   display: none;
 }
 
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 8rem 1vh 1rem;
-  z-index: 1;
-  background: linear-gradient(
-    #ffffff,
-    #ffffff,
-    #fbfcf9,
-    #ced1ef,
-    #ffffff,
-    #fbfcf9,
-    #ced1ef,
-    #ffffff
-  );
-}
-
 .home {
   color: rgb(255, 255, 255);
   background: rgba(0, 0, 0, 1);
@@ -193,17 +174,34 @@ a {
 }
 
 .project {
+  border: 4px solid red;
   display: flex;
-  margin: 2rem auto;
-  position: relative;
-  flex-direction: column-reverse;
-  align-items: center;
+  /* margin: 2rem auto; */
+  /* position: relative; */
+  /* flex-direction: column-reverse; */
+  justify-content: center;
   width: fit-content;
+  /* max-width: 1000px; */
+  flex-wrap: wrap;
+  margin: 2rem auto;
 }
 
+.project img {
+  width: 100%;
+  border: 5px solid orange;
+  /* max-width: 400px; */
+  /* position: absolute; */
+}
+.mobilepics img {
+  width: 20%;
+  position: absolute;
+  transition: all 0.6s ease;
+  top: 4px;
+}
 .project > div {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
+  border: 4px solid #52ee5c;
 }
 
 .reverse {
@@ -313,7 +311,7 @@ small:hover {
   box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.5);
 }
 
-.profesco {
+/* .profesco {
   background: url("../img/profesco.png") no-repeat;
   background-size: cover;
   height: 45vh;
@@ -408,12 +406,10 @@ small:hover {
   background: url("../img/rest.png") no-repeat;
   background-size: cover;
   height: 45vh;
-}
+} */
 
-.mobilepics img {
-  width: 20%;
-  position: relative;
-  transition: all 0.6s ease;
+main {
+  padding: 1rem;
 }
 
 footer li,
@@ -490,6 +486,11 @@ hr {
   border: 0.1px dotted rebeccapurple;
 }
 
+footer ~ div {
+  padding: 0.1rem 1rem;
+  background-color: #f1f1f1;
+}
+
 @media only screen and (min-width: 768px) {
   .abt_img {
     height: 60%;
@@ -543,16 +544,15 @@ hr {
     display: inline-block !important;
   }
 
-  .project_pics {
+  /* .project_pics {
     padding: 2rem 1rem 1rem 1rem;
-  }
+  } */
 
   .fa-bars {
     display: none !important;
   }
 
   .project {
-    /* margin: 4rem 1rem; */
     flex-direction: row;
     align-items: center;
   }
@@ -572,10 +572,5 @@ hr {
 
   .left {
     margin-right: 2rem;
-  }
-
-  footer ~ div {
-    padding: 0.1rem 1rem;
-    background-color: #f1f1f1;
   }
 }
