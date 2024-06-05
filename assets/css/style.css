@@ -182,21 +182,23 @@ a {
   margin: 2rem auto;
 }
 
-.project img {
+.project_pics > img {
   width: 100%;
+  box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
 }
 
 .mobilepics img {
   width: 20%;
   position: absolute;
   transition: all 0.6s ease;
-  top: 4px;
+  top: 10px;
+  left: 10px;
 }
 
 .project > div {
   flex: 400px;
-  
-  height: fit-content !important;
+  height: fit-content;
 }
 
 .project .description > p {
@@ -230,18 +232,22 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-.project small:nth-child(odd) {
+small {
+  border-radius: 360px;
+}
+.project small:nth-child(even) {
   margin: 0.5rem 0.5rem 0 0;
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: #dcf2b0;
+  background: #00ffff;
   transition: all 0.5s ease;
 }
 
-.project small:nth-child(even) {
-  background: #ced1ef;
+.project small:nth-child(odd) {
+  background: #a00a0a;
   display: inline-block;
   padding: 0.5rem 1rem;
+  color: ghostwhite;
   margin: 0.5rem 0.5rem 0 0;
   transition: all 0.5s ease;
 }
@@ -273,6 +279,7 @@ small:hover {
   width: 0;
   height: 100%;
   transition: 0.5s ease;
+  border-radius: 5px;
 }
 
 .project_pics:hover .overlay {
@@ -295,11 +302,6 @@ small:hover {
 .head {
   background: rgba(0, 0, 0, 1);
   padding-top: 0.5rem !important;
-}
-
-.project_pics {
-  width: 100%;
-  box-shadow: 0 1px 4px 0.5px rgba(0, 0, 0, 0.5);
 }
 
 main {
