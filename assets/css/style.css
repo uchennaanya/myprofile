@@ -232,8 +232,9 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-small {
+.project small {
   border-radius: 360px;
+  box-shadow: 0 1px 9px 0 #ccc;
 }
 .project small:nth-child(even) {
   margin: 0.5rem 0.5rem 0 0;
