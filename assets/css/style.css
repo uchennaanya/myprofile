@@ -20,15 +20,6 @@ html {
   z-index: 2;
 }
 
-.fa-bars {
-  color: #f1f1f1;
-  font-size: 2rem;
-}
-
-.logo {
-  padding: 0;
-}
-
 #navbar ul,
 li,
 a {
@@ -205,8 +196,6 @@ a {
   left: 10px;
 }
 
-
-
 .project .description > p {
   margin: 2rem 0;
 }
@@ -241,22 +230,18 @@ a {
 .project small {
   border-radius: 360px;
   box-shadow: 0 1px 9px 0 #ccc;
+  padding: 0.1rem 1rem;
+  display: inline-block;
+  margin: 0.5rem 0.5rem 0 0;
+  transition: all 0.5s ease;
 }
 .project small:nth-child(even) {
-  margin: 0.5rem 0.5rem 0 0;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background: #00ffff;
-  transition: all 0.5s ease;
+  background: #daffff;
 }
 
 .project small:nth-child(odd) {
   background: #a00a0a;
-  display: inline-block;
-  padding: 0.5rem 1rem;
   color: ghostwhite;
-  margin: 0.5rem 0.5rem 0 0;
-  transition: all 0.5s ease;
 }
 
 small:hover {
