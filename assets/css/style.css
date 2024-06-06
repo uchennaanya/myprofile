@@ -177,6 +177,7 @@ a {
   display: flex;
   gap: 15px;
   justify-content: center;
+  align-items: center;
   width: fit-content;
   flex-wrap: wrap;
   margin: 2rem auto;
@@ -197,7 +198,7 @@ a {
 }
 
 .project > div {
-  flex: 400px;
+  flex: 300px;
   height: fit-content;
 }
 
