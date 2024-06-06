@@ -179,7 +179,16 @@ a {
   align-items: center;
   width: fit-content;
   flex-wrap: wrap;
-  margin: 2rem auto;
+  margin: 4rem auto;
+}
+
+.project > div {
+  flex: 300px;
+  height: fit-content;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 .project_pics > img {
@@ -196,10 +205,7 @@ a {
   left: 10px;
 }
 
-.project > div {
-  flex: 300px;
-  height: fit-content;
-}
+
 
 .project .description > p {
   margin: 2rem 0;
