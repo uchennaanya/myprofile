@@ -93,16 +93,14 @@ a {
 .arrow {
   animation: MoveUpDown 1s infinite alternate;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   position: fixed;
-  font-size: 1.5rem;
+  margin-left: -33px;
+  font: 200 1.5rem/1rem sans-serif;
 }
 
 #arrow {
   color: #000;
-  border-radius: 360px;
-  padding: 0.5rem;
 }
 
 @keyframes MoveUpDown {
@@ -297,7 +295,7 @@ small:hover {
 }
 
 main {
-  padding: 1rem;
+  padding: 2rem;
 }
 
 footer li,
@@ -370,7 +368,7 @@ footer ul {
 
 hr {
   box-shadow: 0 1px 9px 0 rgba(0, 0, 0, 0.3);
-  border: 0.1px dotted rebeccapurple;
+  border: 1px dotted rebeccapurple;
 }
 
 footer ~ div {
