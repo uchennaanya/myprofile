@@ -371,6 +371,21 @@ hr {
   border: 1px dotted rebeccapurple;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(131, 210, 241, 0.25);
+  border-radius: 200px;
+  border: solid 4px transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 footer ~ div {
   padding: 0.1rem 1rem;
   background-color: #f1f1f1;
