@@ -3,8 +3,9 @@
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: sans-serif;
-  /* font-family: "D-Din Regular", serif; */
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 html {
